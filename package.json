@@ -3,9 +3,13 @@
     "node-sass": "^9.0.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   },
-  "scripts": {
-    "scss": "gulp sass"
-  }
+  "name": "studiopresent",
+  "description": "Praksa Studio Present - Suzana",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC"
 }
