@@ -4,157 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <title>DVG Company</title>
-    <link rel="stylesheet" href="styles/style.scss">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="header">
         <div class="header-gray">
-            <img src="images/logo.png" alt="logo">
-            <div class="languages">
-                <a href="#">Srpski</a>
-                <a href="#">English</a>
-                <a href="#">Magyar</a>
-            </div>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <span class="languages">
+                <a href="#" class="link">Srpski</a>
+                <a href="#" class="link">English</a>
+                <a href="#" class="link">Magyar</a>
+            </span>
         </div>
-        <div class="nav">
-            <div class="nav-item">
-                <a href="">O NAMA</a>
-                <p>vizija za uspeh</p>
-            </div>
-            <div class="nav-item">
-                <a href="">DVG PROIZVODI</a>
-                <p>naši proizvodi</p>
-            </div>
-            <div class="nav-item">
-                <a href="">BRENDOVI</a>
-                <p>koje zastupamo</p>
-            </div>
-            <div class="nav-item">
-                <a href="">DISTRIBUCIJA</a>
-                <p>logistika i operativa</p>
-            </div>
-            <div class="nav-item">
-                <a href="">SARADNJA</a>
-                <p>proširenje ponude</p>
-            </div>
-            <div class="nav-item">
-                <a href="">NOVOSTI</a>
-                <p>aktuelnosti</p>
-            </div>
-            <div class="nav-item">
-                <a href="">KONTAKT</a>
-                <p>kontakirajte nas</p>
-            </div>
-        </div>
+        <nav>
+            <ul class="menu">
+                <li><a class="button" href="#about">O NAMA<br><span>vizija za uspeh</span></a></li>
+                <li><a class="button" href="#our-products">DVG PROIZVODI<br><span>naši proizvodi</span></a></li>
+                <li><a class="button" href="#brands">BRENDOVI<br><span>koje zastupamo</span></a></li>
+                <li><a class="button" href="#distribution">DISTRIBUCIJA<br><span>logistika i operativa</span></a></li>
+                <li><a class="button" href="#">SARADNJA<br><span>proširenje ponude</span></a></li>
+                <li><a class="button" href="#">NOVOSTI<br><span>aktuelnosti</span></a></li>
+                <li><a class="button" href="#footer">KONTAKT<br><span>kontaktirajte nas</span></a></li>
+            </ul>
+        </nav>
     </div>
 
     <div class="hero">
     </div>
 
-    <div class="about">
+    <div id="about">
         <div class="about-img">
-            <img src="images/dvg-company.png" alt="about_DVG" width="50%">
+            <img src="images/dvg-company.png" alt="about_DVG" id="dvg-image">
         </div>
         <div class="about-text">
             <h2>DVG Company</h2>
             <div class="divider-red"></div>
-            <h4>Veleprodaja i maloprodaja kozmetike i kućne hemije</h4>
+            <h3 class="inter-font">Veleprodaja i maloprodaja kozmetike i kućne hemije</h3>
             <hr>
             <p>DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Subotici.
                 Prvenstvena delatnost kompanije je veleprodaja kozmetike i kućne hemije.
                 U potpunosti je u privatnom vlasništvu, sa sedištem u Subotici. Tu se nalazi distrubutivni centar
-                i poslovne prostorije, sa ukupno 3000m2 magacinskog prostora koji zadovoljava sve segmente u pogledu
+                i poslovne prostorije, sa ukupno 3000m<sup>2</sup> magacinskog prostora koji zadovoljava sve segmente u
+                pogledu
                 smeštaja,
                 čuvanja i plasiranja robe.</p>
-            <button class="learn-more">Saznajte više o nama</button>
+            <button class="red-button">Saznajte više o nama</button>
         </div>
     </div>
 
-    <div class="distribution">
-        <!-- <img src="images/distribution.jpg" alt="distribution" width="100%"> -->
-        <h1>POUZDANA DISTRIBUCIJA</h1>
-        <div class="divider-red"></div>
+    <div id="distribution">
+        <div class="parallax">
+            <div class="parallax-content">
+                <h1>POUZDANA DISTRIBUCIJA</h1>
+                <div class="divider-red"></div>
+            </div>
+        </div>
         <div class="distribution-container">
             <div class="distribution-item">
-                <img src="images/partneri.png" alt="partners">
-                <h4>POSTANITE NAŠ PARTNER</h4>
+                <img src="images/partneri.png" alt="partners" class="dist-img"><br>
+                <a href="#">POSTANITE NAŠ PARTNER</a>
                 <div class="divider-red"></div>
             </div>
             <div class="distribution-item">
-                <img src="images/proizvodi.png" alt="products">
-                <h4>NAŠI PROIZVODI</h4>
+                <img src="images/proizvodi.png" alt="products" class="dist-img"><br>
+                <a href="#our-products">NAŠI PROIZVODI</a>
                 <div class="divider-red"></div>
             </div>
             <div class="distribution-item">
-                <img src="images/uvoz.png" alt="dist_hungary">
-                <h4>UVOZ IZ MAĐARSKE</h4>
+                <img src="images/uvoz.png" alt="dist_hungary" class="dist-img"><br>
+                <a href="#">UVOZ IZ MAĐARSKE</a>
                 <div class="divider-red"></div>
             </div>
         </div>
     </div>
 
     <div class="in-numbers">
-        <h1>DVG Company</h1>
+        <h2>DVG Company</h2>
         <p>u brojkama</p>
         <div class="divider-red"></div>
-        <div class="container">
+        <div class="numbers-container">
             <div class="container-item">
-                <h3>3.000m<sup>2</sup></h3>
+                <h1>3.000m<sup>2</sup></h1>
                 <p>Magacinskog prostora</p>
             </div>
             <div class="container-item">
-                <h3>20</h3>
+                <h1>20</h1>
                 <p>Vozila</p>
             </div>
             <div class="container-item">
-                <h3>8</h3>
+                <h1>8</h1>
                 <p>Komercijalista</p>
             </div>
             <div class="container-item">
-                <h3>170</h3>
+                <h1>170</h1>
                 <p>Brendova</p>
             </div>
         </div>
     </div>
 
-    <div class="our-products">
-        <h4>Naši proizvodi</h4>
-        <hr>
-        <p>Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela.
-            Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.</p>
-        <div class="grid-container">
-            <div class="grid-item">
+    <div id="our-products">
+        <div class="products-info">
+            <h4 class="inter-font">Naši proizvodi</h4>
+            <hr>
+            <p>Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela.
+                Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.</p>
+        </div>
+        <div class="products-container">
+            <div class="product-item">
                 <img src="images/kese.png" alt="kese">
                 <h5>KESE I FOLIJE</h5>
                 <div class="divider-red"></div>
             </div>
-            <div class="grid-item">
+            <div class="product-item">
                 <img src="images/kuhinja.png" alt="za_kuhinju">
                 <h5>ZA KUHINJU</h5>
                 <div class="divider-red"></div>
             </div>
-            <div class="grid-item">
+            <div class="product-item">
                 <img src="images/ubrus.png" alt="ubrusi">
                 <h5>UBRUSI I TOALET PAPIRI</h5>
                 <div class="divider-red"></div>
             </div>
-            <div class="grid-item">
+            <div class="product-item">
                 <img src="images/kozmetika.png" alt="kozmetika">
                 <h5>KOZMETIKA</h5>
                 <div class="divider-red"></div>
             </div>
-            <div class="grid-item">
+            <div class="product-item">
                 <img src="images/kanta.png" alt="kanta">
                 <h5>PLASTIČNE KANTE</h5>
                 <div class="divider-red"></div>
             </div>
         </div>
+        <img src="images/Group 105.png" alt="detalj" id="detail">
     </div>
 
-    <div class="brands">
-        <h4>Istaknuti brendovi za koje radimo distribuciju</h4>
-        <hr>
+    <div id="brands">
+        <div class="brands-info">
+            <h4 class="inter-font">Istaknuti brendovi za koje radimo distribuciju</h4>
+            <hr>
+        </div>
         <div class="brands-container">
             <div class="brands-item">
                 <img src="images/logoi-01.png" alt="dove">
@@ -181,10 +171,10 @@
                 <p>Cif</p>
             </div>
         </div>
-        <button>Svi brendovi u našem portfoliju</button>
+        <button class="red-button">Svi brendovi u našem portfoliju</button>
     </div>
 
-    <div class="footer">
+    <div id="footer">
         <div class="contact-container">
             <div class="contact-item">
                 <img src="images/Frame.png" alt="logo">
@@ -193,34 +183,34 @@
                 <h2>D.V.G. COMPANY</h2>
                 <img src="images/location.png" alt="location">
                 <span>Čantavirski put bb <br>
-                24000 Subotica, Srbija</span> <br>
+                    &emsp;&emsp;24000 Subotica, Srbija</span> <br>
                 <img src="images/phone.png" alt="phone">
                 <span>+381 24 568 555</span> <br>
                 <img src="images/email.png" alt="email">
                 <span>office@dvgcompany.com</span>
             </div>
             <div class="contact-item">
-                <a href="#">O NAMA</a>
-                <a href="#">DVG PROIZVODI</a>
-                <a href="#">BRENDOVI</a>
-                <a href="#">DISTRIBUCIJA</a>
+                <a href="#about">O NAMA</a>
+                <a href="#our-products">DVG PROIZVODI</a>
+                <a href="#brands">BRENDOVI</a>
+                <a href="#distribution">DISTRIBUCIJA</a>
                 <a href="#">SARADNJA</a>
                 <a href="#">NOVOSTI</a>
-                <a href="#">KONTAKT</a>
+                <a href="#contact">KONTAKT</a>
             </div>
             <div class="contact-item">
                 <p>Pratite nas:</p>
-                <img src="images/logo1.png" alt="facebook">
-                <img src="images/logo2.png" alt="twitter">
-                <img src="images/logo3.png" alt="youtube">
-                <img src="images/logo4.png" alt="messenger">
+                <img src="images/logo1.png" alt="facebook" class="social-media">
+                <img src="images/logo2.png" alt="twitter" class="social-media">
+                <img src="images/logo3.png" alt="youtube" class="social-media">
+                <img src="images/logo4.png" alt="messenger" class="social-media">
             </div>
         </div>
         <div class="footer-info">
-            <p>Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava zadržana.</p>
-            <a href="#">Privatnost podataka</a>
-            <a href="#">Uslovi korišćenja</a>
-            <p>Powered by <span><a href="#">StudioPresent</a></span></p>
+            <p id="copyright">Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava zadržana.</p>
+            <a href="#" class="links">Privatnost podataka</a>
+            <a href="#" class="links">Uslovi korišćenja</a>
+            <p id="studio-link">Powered by <span><a href="#">StudioPresent</a></span></p>
         </div>
     </div>
 
