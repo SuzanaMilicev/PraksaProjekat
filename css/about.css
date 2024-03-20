@@ -1,0 +1,29 @@
+#about {
+  min-height: 625px;
+  padding: 25px 0;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-wrap: wrap;
+  color: #303030;
+}
+#about .about-img {
+  min-width: 400px;
+  align-self: center;
+}
+#about .about-img #dvg-image {
+  width: 100%;
+  height: auto;
+}
+#about .about-text {
+  padding: 100px 50px;
+  max-width: 525px;
+}
+#about .about-text h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+#about .about-text p {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 50px 0;
+}

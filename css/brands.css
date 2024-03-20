@@ -1,0 +1,32 @@
+#brands {
+  text-align: center;
+}
+#brands .brands-info {
+  text-align: center;
+  padding: 100px 50px 10px 50px;
+  max-width: 525px;
+  margin: 0 auto;
+}
+#brands .brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+#brands .brands-container .brands-item {
+  margin: 20px 50px 70px 50px;
+}
+#brands .brands-container .brands-item p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #474747;
+  text-align: center;
+}
+#brands .brands-container .brands-item img {
+  margin-bottom: 10px;
+}
+#brands .red-button {
+  margin-bottom: 50px;
+}

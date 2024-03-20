@@ -1,0 +1,46 @@
+#distribution .parallax {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/distribution.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: white;
+}
+#distribution .parallax .divider-red {
+  margin: 20px auto;
+}
+
+.distribution-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+.distribution-container .distribution-item {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.distribution-container .distribution-item a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #474747;
+}
+.distribution-container .distribution-item a:hover {
+  color: black;
+  font-weight: bold;
+}
+.distribution-container .distribution-item img {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,10 @@
+.hero-header .swiper {
+  margin: 0;
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+.hero-header .swiper img {
+  max-width: 100%;
+  min-height: 600px;
+  object-fit: cover;
+}

@@ -1,0 +1,123 @@
+.header {
+    height: 140px;
+
+    .header-gray {
+        background-color: #D9D9D9;
+        width: 100%;
+        height: 70px;
+
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        .logo {
+            padding: 15px 30px;
+        }
+
+        .languages {
+            text-decoration: none;
+            color: #595959;
+            padding: 25px 7px;
+
+            .link {
+                padding: 3px;
+                color: #595959;
+                font-weight: 400;
+                font-size: 13px;
+
+                &:hover {
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+        }
+
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+
+            &:checked+.checkbox-label {
+                .ball {
+                    transform: translateX(24px);
+                }
+            }
+        }
+
+        .checkbox-label {
+            background-color: #292c35;
+            width: 43px;
+            height: 19px;
+            border-radius: 50px;
+            position: relative;
+            padding: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ball {
+                background-color: #D9D9D9;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                border-radius: 50%;
+                transition: transform 0.2s linear;
+            }
+        }
+
+        .material-symbols-outlined {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .toggle {
+            display: inline;
+            float: left;
+            padding-right: 7px;
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        .menu {
+            min-height: 62px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+
+            span {
+                color: #595959;
+            }
+
+            li {
+                display: inline;
+                border: 1px solid #D9D9D9;
+                padding: 16px 40px;
+
+                .button {
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 14px;
+                    text-align: center;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+#brands {
+    text-align: center;
+
+    .brands-info {
+        text-align: center;
+        padding: 100px 50px 10px 50px;
+        max-width: 525px;
+        margin: 0 auto;
+    }
+
+    .brands-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+
+        .brands-item {
+            margin: 20px 50px 70px 50px;
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                color: #474747;
+                text-align: center;
+            }
+
+            img {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .red-button {
+        margin-bottom: 50px;
+    }
+}

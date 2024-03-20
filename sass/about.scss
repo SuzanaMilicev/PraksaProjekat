@@ -1,0 +1,34 @@
+#about {
+    min-height: 625px;
+    padding: 25px 0;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-wrap: wrap;
+    color: #303030;
+
+    .about-img {
+        min-width: 400px;
+        align-self: center;
+
+        #dvg-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-text {
+        padding: 100px 50px;
+        max-width: 525px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 50px 0;
+        }
+    }
+}

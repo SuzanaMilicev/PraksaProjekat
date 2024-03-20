@@ -1,0 +1,205 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.divider-red {
+    width: 100px;
+    height: 4px;
+    background-color: #BF0F0F;
+    margin: 20px 0;
+}
+
+.red-button {
+    background-color: #BF0F0F;
+    padding: 15px 16px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.inter-font {
+    font-family: 'Inter', sans-serif;
+    color: #474747;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 665px) {
+    .in-numbers {
+        .numbers-container {
+            .container-item {
+                border: none;
+            }
+        }
+    }
+
+    #footer {
+        .contact-container {
+            .contact-item {
+                border: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1106px) and (max-width: 1400px) {
+    #about {
+        .about-text {
+            max-width: 280px;
+        }
+    }
+}
+
+@media (max-width: 1105px) {
+    #about {
+        margin: auto;
+        display: block;
+    }
+
+    #div-img {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 1285px) {
+    .header {
+        nav {
+            .menu {
+                li {
+                    padding: 16px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1004px) {
+    .header {
+        nav {
+            .menu {
+                li {
+                    padding: 16px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 864px) {
+    .header {
+        nav {
+            .menu {
+                height: 124px;
+            }
+        }
+    }
+
+    .hero-header {
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 508px) {
+
+    /*MOBILNI HAMBURGER*/
+    .header {
+        nav {
+            .menu {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                background-color: #D9D9D9;
+                transition: 0.5s all ease;
+                visibility: hidden;
+                align-items: center;
+                transform: translateX(-800px);
+                padding-top: 60px;
+
+                .show {
+                    transform: translateX(0px);
+                    transition: 0.5s all ease;
+                }
+
+                li {
+                    a {
+                        margin-bottom: 10px;
+                        display: block;
+                    }
+                }
+            }
+
+            .menu-btn {
+                display: block;
+                position: absolute;
+                color: white;
+                top: 10px;
+                right: 30px;
+                font-size: 2rem;
+                z-index: 999;
+            }
+        }
+    }
+}
+
+/*DARK MODE*/
+
+.dark {
+    background-color: #292c35;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: #fff;
+    }
+
+    .header {
+        nav {
+            .menu {
+                li {
+                    a {
+                        color: #fff;
+
+                        span {
+                            color: #D9D9D9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        background-color: #292c35;
+    }
+
+    #distribution {
+        a {
+            color: #fff;
+        }
+    }
+
+    #our-products {
+        background-color: #2f2f2f;
+    }
+
+    #brands {
+        .brands-container {
+            .brands-item {
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}

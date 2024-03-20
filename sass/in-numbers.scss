@@ -1,0 +1,61 @@
+.in-numbers {
+    color: #303030;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+
+    .divider-red {
+        margin: 20px auto 100px auto;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 42px;
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        color: #474747;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0;
+    }
+
+    .numbers-container {
+        width: 100%;
+        min-height: 350px;
+        background-image: url(../images/in-numbers.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+
+        .container-item {
+            border-right: 1px solid #D9D9D9;
+            padding: 0 100px;
+            margin: 15px 0;
+
+            h1 {
+                font-size: 42px;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
