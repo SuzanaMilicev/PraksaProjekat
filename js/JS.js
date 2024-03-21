@@ -1,11 +1,18 @@
 /*HAMBURGER*/
-var hamburger = document.querySelector(".hamburger");
-var menu = document.querySelector(".menu");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
-});
+function myFunction() {
+  hamburger.classList.toggle("toggle");
+  var menu = document.getElementsByClassName("menu");
+  var hamburger = document.getElementsByClassName("hamburger");
+  var openBtn = document.getElementById("menu-btn1");
+  var closeBtn = document.getElementById("menu-btn2");
+  if (openBtn.style.display === "block") {
+    menu.style.display = "none";
+    closeBtn.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+    closeBtn.style.display = "block";
+  }
+};
 
 /*DARK MODE*/
 const checkbox = document.getElementById("checkbox");

@@ -102,6 +102,15 @@
   text-decoration: none;
   color: gray;
 }
-.header nav .hamburger {
-  visibility: hidden;
+.header nav .hamburger #menu-btn1, .header nav .hamburger #menu-btn2 {
+  display: none;
+  z-index: 999;
+  top: 73px;
+  right: 1rem;
+  padding: 4px;
+  color: black;
+  font-size: 30px;
+}
+.header nav .hamburger #menu-btn1:hover, .header nav .hamburger #menu-btn2:hover {
+  cursor: pointer;
 }

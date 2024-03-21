@@ -121,7 +121,19 @@
         }
 
         .hamburger {
-            visibility: hidden;
+            #menu-btn1, #menu-btn2 {
+                display: none;
+                z-index: 999;
+                top: 73px;
+                right: 1rem;
+                padding: 4px;
+                color: black;
+                font-size: 30px;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
-}    
+}
