@@ -1,12 +1,11 @@
 /*HAMBURGER*/
 var hamburger = document.querySelector(".hamburger");
-var menuBtn1 = document.querySelector(".menu-btn1");
 var menu = document.querySelector(".menu");
 
-menuBtn1.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
-})
+});
 
 /*DARK MODE*/
 const checkbox = document.getElementById("checkbox");

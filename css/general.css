@@ -94,7 +94,7 @@
   .header nav .menu .active {
     left: 0;
   }
-  .header nav .hamburger .menu-btn1 {
+  .header nav .hamburger #menu-btn1 {
     visibility: visible;
     position: absolute;
     color: black;
@@ -103,13 +103,24 @@
     z-index: 999;
     padding-top: 5px;
   }
-  .header nav .hamburger .menu-btn1:hover {
+  .header nav .hamburger #menu-btn1:hover {
     cursor: pointer;
   }
-  .header nav .hamburger .active .menu-btn1 {
+  .header nav .hamburger #menu-btn2 {
+    position: absolute;
+    color: black;
+    right: 20px;
+    font-size: 2rem;
+    z-index: 999;
+    padding-top: 5px;
+  }
+  .header nav .hamburger #menu-btn2:hover {
+    cursor: pointer;
+  }
+  .header nav .hamburger .active #menu-btn1 {
     visibility: hidden;
   }
-  .header nav .hamburger .active .menu-btn2 {
+  .header nav .hamburger .active #menu-btn2 {
     visibility: visible;
   }
   .hero-header {

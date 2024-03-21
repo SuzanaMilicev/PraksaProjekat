@@ -103,6 +103,12 @@
     }
 }
 
+// @media (min-width: 508px) {
+//     .hamburger {
+//         visibility: hidden;
+//     }
+// } 
+
 @media (max-width: 508px) {
 
     /*MOBILNI HAMBURGER*/
@@ -135,7 +141,7 @@
             }
 
             .hamburger {
-                .menu-btn1 {
+                #menu-btn1 {
                     visibility: visible;
                     position: absolute;
                     color: black;
@@ -149,11 +155,24 @@
                     }
                 }
 
+                #menu-btn2 {
+                    position: absolute;
+                    color: black;
+                    right: 20px;
+                    font-size: 2rem;
+                    z-index: 999;
+                    padding-top: 5px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
                 .active {
-                    .menu-btn1 {
+                    #menu-btn1 {
                         visibility: hidden;
                     }
-                    .menu-btn2 {
+                    #menu-btn2 {
                         visibility: visible;
                     }
                 }
