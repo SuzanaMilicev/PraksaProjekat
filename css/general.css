@@ -62,49 +62,63 @@
 }
 @media (max-width: 864px) {
   .header nav .menu {
-    height: 124px;
+    height: 142px;
   }
   .hero-header {
-    margin-top: 64px;
+    margin-top: 75px;
   }
 }
 @media (max-width: 508px) {
   /*MOBILNI HAMBURGER*/
+  .header {
+    height: 110px;
+  }
+  .header nav {
+    background-color: #fff;
+    height: 40px;
+  }
   .header nav .menu {
-    position: absolute;
-    top: 50px;
-    left: 0;
+    position: fixed;
+    top: 70px;
+    left: -150%;
     width: 100%;
-    height: 100%;
     flex-direction: column;
     background-color: #D9D9D9;
-    transition: 0.5s all ease;
-    visibility: hidden;
+    transition: 0.5s;
     align-items: center;
-    transform: translateX(-800px);
-    padding-top: 60px;
+    text-align: center;
   }
-  .header nav .menu .show {
-    transform: translateX(0px);
-    transition: 0.5s all ease;
+  .header nav .menu .button {
+    margin: 10px 0;
   }
-  .header nav .menu li a {
-    margin-bottom: 10px;
-    display: block;
+  .header nav .menu .active {
+    left: 0;
   }
-  .header nav .menu-btn {
-    display: block;
+  .header nav .hamburger .menu-btn1 {
+    visibility: visible;
     position: absolute;
-    color: white;
-    top: 10px;
-    right: 30px;
+    color: black;
+    right: 20px;
     font-size: 2rem;
     z-index: 999;
+    padding-top: 5px;
+  }
+  .header nav .hamburger .menu-btn1:hover {
+    cursor: pointer;
+  }
+  .header nav .hamburger .active .menu-btn1 {
+    visibility: hidden;
+  }
+  .header nav .hamburger .active .menu-btn2 {
+    visibility: visible;
+  }
+  .hero-header {
+    margin-top: 0px;
   }
 }
 /*DARK MODE*/
 .dark {
-  background-color: #292c35;
+  background-color: #121212;
 }
 .dark h1,
 .dark h2,
@@ -114,21 +128,25 @@
 .dark p {
   color: #fff;
 }
+.dark .header nav .menu {
+  background-color: #292929;
+}
 .dark .header nav .menu li a {
   color: #fff;
 }
 .dark .header nav .menu li a span {
   color: #D9D9D9;
 }
-.dark #about {
-  background-color: #292c35;
+.dark #about, .dark #our-products {
+  background-color: #121212;
 }
 .dark #distribution a {
   color: #fff;
 }
-.dark #our-products {
-  background-color: #2f2f2f;
-}
 .dark #brands .brands-container .brands-item p {
+  color: #fff;
+}
+.dark .mymodal .modal-content {
+  background-color: #121212;
   color: #fff;
 }
