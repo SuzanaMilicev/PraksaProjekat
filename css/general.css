@@ -60,30 +60,47 @@
     padding: 16px 10px;
   }
 }
-@media (max-width: 864px) {
-  .header nav .menu {
-    height: 142px;
+@media (min-width: 865px) {
+  .hamburger {
+    display: none !important;
   }
+  .hamburger #menu-btn1,
+  .hamburger #menu-btn2 {
+    display: none !important;
+  }
+  ul {
+    display: flex !important;
+  }
+}
+@media (max-width: 864px) {
+  /*HAMBURGER*/
   .hero-header {
     margin-top: 75px;
   }
-}
-@media (max-width: 508px) {
-  /*MOBILNI HAMBURGER*/
   .header {
     height: 110px;
   }
   .header nav {
     background-color: #fff;
     height: 40px;
+    border-top: 2px solid #fff;
   }
   .header nav .menu {
-    width: 100%;
+    max-width: 400px;
     display: none;
     flex-direction: column;
     background-color: #D9D9D9;
     align-items: center;
     text-align: center;
+  }
+  .header nav .menu li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid #fff;
+  }
+  .header nav .menu li:hover {
+    background-color: #fff;
+    cursor: pointer;
   }
   .header nav .menu .button {
     margin: 10px 0;
@@ -94,15 +111,12 @@
   }
   .header nav .hamburger #menu-btn2 {
     display: none;
+    position: absolute;
   }
   .hero-header {
     margin-top: 0px;
   }
 }
-.toggle {
-  display: none;
-}
-
 /*DARK MODE*/
 .dark {
   background-color: #121212;
@@ -114,6 +128,13 @@
 .dark h5,
 .dark p {
   color: #fff;
+}
+.dark .header nav {
+  background-color: #121212;
+}
+.dark .header nav .hamburger #menu-btn1,
+.dark .header nav .hamburger #menu-btn2 {
+  color: #D9D9D9;
 }
 .dark .header nav .menu {
   background-color: #292929;

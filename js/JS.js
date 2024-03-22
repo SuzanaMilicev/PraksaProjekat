@@ -1,18 +1,33 @@
 /*HAMBURGER*/
-function myFunction() {
-  hamburger.classList.toggle("toggle");
-  var menu = document.getElementsByClassName("menu");
-  var hamburger = document.getElementsByClassName("hamburger");
+function openMenu() {
+  var menu = document.querySelector(".menu");
   var openBtn = document.getElementById("menu-btn1");
   var closeBtn = document.getElementById("menu-btn2");
-  if (openBtn.style.display === "block") {
+  menu.style.display = "flex";
+  closeBtn.style.display = "block";
+  openBtn.style.display = "none";
+};
+
+function closeMenu() {
+  var menu = document.querySelector(".menu");
+  var openBtn = document.getElementById("menu-btn1");
+  var closeBtn = document.getElementById("menu-btn2");
+  menu.style.display = "none";
+  closeBtn.style.display = "none";
+  openBtn.style.display = "block";
+};
+
+document.querySelectorAll(".menu li a").forEach(function(elem) {
+  elem.addEventListener('click', function(ev) {
+    var menu = document.querySelector(".menu");
+    var openBtn = document.getElementById("menu-btn1");
+    var closeBtn = document.getElementById("menu-btn2");
     menu.style.display = "none";
     closeBtn.style.display = "none";
-  } else {
-    menu.style.display = "flex";
-    closeBtn.style.display = "block";
-  }
-};
+    openBtn.style.display = "block";
+  });
+});
+
 
 /*DARK MODE*/
 const checkbox = document.getElementById("checkbox");
