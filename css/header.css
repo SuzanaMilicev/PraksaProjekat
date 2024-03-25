@@ -68,6 +68,7 @@
   display: inline;
   float: left;
   padding-right: 7px;
+  margin: auto 5px;
 }
 .header nav {
   width: 100%;

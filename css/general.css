@@ -74,9 +74,6 @@
 }
 @media (max-width: 864px) {
   /*HAMBURGER*/
-  .hero-header {
-    margin-top: 75px;
-  }
   .header {
     height: 110px;
   }
@@ -115,6 +112,39 @@
   }
   .hero-header {
     margin-top: 0px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    min-width: 400px;
+  }
+  .header .header-gray .languages {
+    width: 200px;
+    padding: 10px;
+    float: left;
+  }
+  .header .header-gray .languages .toggle {
+    display: block;
+    float: left;
+    padding-top: 10px;
+  }
+  .header .header-gray .languages .link {
+    display: block;
+    padding: 0;
+  }
+  .header .header-gray .languages .link:last-child {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 390px) {
+  #distribution .parallax .parallax-content h1 {
+    font-size: 35px;
+  }
+  #distribution .distribution-container {
+    width: 100%;
+  }
+  #distribution .distribution-container .distribution-item img {
+    max-height: 250px;
   }
 }
 /*DARK MODE*/
